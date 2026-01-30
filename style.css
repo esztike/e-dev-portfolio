@@ -1,0 +1,50 @@
+/* design system variables */
+:root {
+  --bg-color: #f8f8f9;
+  --text-primary: #1a1a1a;
+  --accent: #0070e3;
+  --font-main: "Poppins", system-ui, sans-serif;
+}
+
+/* basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Nuanced Logo Link */
+.logo {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* The <&> Bracket Style */
+.accent-bracket {
+  color: var(--accent-color);
+  font-family: monospace;
+  font-weight: normal;
+}
+
+/* 4. Hero Content */
+#hero {
+  margin-top: 10vh;
+  max-width: 800px;
+}
+
+.pitch {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 1.5rem 0;
+}
