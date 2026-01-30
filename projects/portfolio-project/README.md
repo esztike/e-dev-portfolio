@@ -1,6 +1,6 @@
 # Case Study: Developer Portfolio Architecture
 
-## 🎯 Objective
+## Objective
 To translate a high-level personal design brand into a semantic, responsive codebase while practicing the discipline of clean folder separation and system architecture.
 
 ## Technical Implementation
