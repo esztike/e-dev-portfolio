@@ -1,9 +1,10 @@
 /* design system variables */
 :root {
+  --font-main: "Avenir Next", sans-serif;
+  --font-logo: "Roboto Mono", monospace; /* Our reliable placeholder */
   --bg-color: #f8f8f9;
   --text-primary: #1a1a1a;
   --accent: #0070e3;
-  --font-main: "Poppins", system-ui, sans-serif;
 }
 
 /* basic reset */
@@ -18,13 +19,13 @@ body {
   color: var(--text-primary);
   font-family: var(--font-main);
   line-height: 1.6;
-  padding: 2rem;
 }
 
 /* Nuanced Logo Link */
 .logo {
   text-decoration: none;
-  color: var(--accent);
+  color: var(--text-primary);
+  font-family: var(--font-logo);
   font-weight: bold;
   font-size: 1.2rem;
   letter-spacing: 1px;
@@ -32,9 +33,12 @@ body {
 
 /* The <&> Bracket Style */
 .accent-bracket {
-  color: var(--accent-color);
-  font-family: monospace;
-  font-weight: normal;
+  color: var(--accent);
+  font-family: var(--font-logo);
+  /* highlight */
+  background-color: #f0f0f0; /* Example: light grey */
+  padding: 2px 4px;
+  border-radius: 3px;
 }
 
 /* 4. Hero Content */

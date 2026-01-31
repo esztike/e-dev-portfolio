@@ -1,54 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale1.0">
-    <title>e // dev-portfolio</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>&lt;e&gt; // dev-portfolio</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- my font reference -->
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    
     <header>
       <nav>
-        <a href="index.html" class="logo" id="logo-brand">&lt;e&gt;</a>
+        <a href="index.html" class="logo" id="logo-brand"
+          ><span>&lt;</span>e<span>&gt;</span></a
+        >
         <ul>
           <!-- replace with nav-bar from bootstrap -->
-          <li><a href="#projects">Projects</a></li></li>
-          <li><a href="docs/resume.pdf">Resume</a></li></li>
+          <li><a href="index.html">home</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="docs/resume.pdf">resume</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      
       <section id="hero">
         <h1>Hi, I'm Eszti Hollenback.</h1>
-        <h2>Digital Experience Designer &lt;&amp;&gt; Web Developer in Training</h2>
+        <h2>
+          Digital Experience Designer
+          <span class="bracket-highlight">&lt;&amp;&gt;</span> Web Developer in
+          training
+        </h2>
 
         <p class="pitch">
-          Bridging the gap between aesthetic design and functional code. 
-          I leverage my background in UX/DX to build web applications that 
-          are as intuitive as they are technically sound.
+          Bridging the gap between aesthetic design and functional code. I
+          leverage my background in UX/DX to build web applications that are as
+          intuitive as they are technically sound.
         </p>
 
         <div class="primary-links">
-          <a href="https://linkedin.com/in/YOUR-PROFILE" target="_blank">LinkedIn</a> |
-          <a href="https://www.esztihollenback.com/" target="_blank">Design portfolio</a> |
+          <a href="https://linkedin.com/in/YOUR-PROFILE" target="_blank"
+            >LinkedIn</a
+          >
+          |
+          <a href="https://www.esztihollenback.com/" target="_blank"
+            >Design portfolio</a
+          >
+          |
           <a href="https://github.com/YOUR-GITHUB" target="_blank">GitHub</a>
         </div>
 
         <div class="cta">
           <a href="#projects" class="btn">Explore my projects</a>
         </div>
-
       </section>
-
     </main>
 
     <footer>
       <p>&copy; 2026 Eszti Hollenback</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
