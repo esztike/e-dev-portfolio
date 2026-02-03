@@ -17,26 +17,193 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="index.html" class="logo" id="logo-brand">&lt;e&gt;</a>
-        <ul>
-          <!-- replace with nav-bar from bootstrap -->
-          <li><a href="index.html">home</a></li>
-          <li><a href="projects.html">projects</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="contact.html">contact</a></li>
-          <li><a href="docs/resume.pdf" target="_blank">resume</a></li>
-        </ul>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">&lt;e&gt;</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">projects</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html"
+                  >about</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <main>
-      <h1>ABOUT</h1>
+    <main class="py-5 about-page">
+      <!-- page title -->
+      <div class="container-fluid px-4 mb-4">
+        <h2 class="display-5 fw-bold mb-4 hero-title">
+          <span class="accent-bracket">&lt;&amp;&gt;</span>about
+        </h2>
+      </div>
+
+      <div class="py-5">
+        <div class="container-fluid px-4">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <!-- illustration -->
+              <figure class="about-illustration text-center mb-4">
+                <img
+                  src="assets/placeholder img.png"
+                  class="img-fluid rounded-circle"
+                  alt="illustration"
+                />
+              </figure>
+              <!-- content -->
+
+              <p class="mb-4">
+                Hey there, I’m Eszti – a digital experience designer, lifelong
+                Star Wars fan, and Lego enthusiast. I believe that good design
+                should feel like a well-timed lightsaber reveal—unexpected,
+                elegant, and deeply satisfying. As a problem solver, I aim to
+                create experiences that feel both functional and human.
+              </p>
+
+              <p class="mb-4">
+                With 5+ years of experience, I’ve crafted intuitive, emotionally
+                resonant digital experiences across enterprise SaaS platforms
+                and nonprofit ecosystems. My design philosophy is rooted in
+                clarity and connection, whether I’m prototyping dashboards for
+                Deloitte Digital or launching a honey brand that blends sensory
+                design with heritage storytelling. I thrive in cross-functional
+                teams and bring empathy, curiosity, and strategic thinking to
+                every collaboration.
+              </p>
+
+              <p class="mb-4">
+                I believe that knowing how a product is built makes me a better
+                designer, and knowing who it’s built for makes me a better
+                developer. My transition into web development is driven by a
+                desire to own the full lifecycle of a digital
+                experience—bridging the gap between pixel-perfect design and
+                functional, clean code.
+              </p>
+
+              <h3 class="section-title">skills</h3>
+              <p class="mb-4">
+                <span class="badge badge-design">User research</span>
+                <span class="badge badge-design">Storytelling</span>
+                <span class="badge badge-design">Wireframing</span>
+                <span class="badge badge-design">Interaction design</span>
+                <span class="badge badge-design">Visual design</span>
+
+                <span class="badge badge-x">Information architecture</span>
+                <span class="badge badge-x">Prototyping</span>
+                <span class="badge badge-x">Design systems</span>
+                <span class="badge badge-x">Semantic HTML</span>
+                <span class="badge badge-x">CSS architecture</span>
+
+                <span class="badge badge-dev">JavaScript</span>
+                <span class="badge badge-dev">Git</span>
+                <span class="badge badge-dev">React</span>
+                <span class="badge badge-dev">APIs</span>
+                <span class="badge badge-dev">Backend fundamentals</span>
+              </p>
+
+              <h3 class="section-title">experience</h3>
+
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <td>2025 - present</td>
+                    <td>2024 - present</td>
+                    <td>2021 - 2024</td>
+                    <td>2020 - 2021</td>
+                    <td>2019 - 2021</td>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>MIT</td>
+                    <td>freelancer</td>
+                    <td>Deloitte Digital</td>
+                    <td>MBO Partners</td>
+                    <td>freelancer</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="col">Full-Stack Dev Student</th>
+                    <th scope="col">DX Designer</th>
+                    <th scope="col">UX/UI Designer</th>
+                    <th scope="col">UX Designer</th>
+                    <th scope="col">UX Designer</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer>
-      <p>&copy; 2026 Eszti Hollenback</p>
+    <footer class="bg-dark text-light py-4">
+      <div class="container-fluid px-4">
+        <div class="row">
+          <div class="col">
+            <div class="footer-badge mb-3">
+              <span class="navbar-brand">&lt;e&gt;</span>
+            </div>
+
+            <div class="primary-links mb-2">
+              <a
+                href="https://linkedin.com/in/esztihollenback"
+                target="_blank"
+                class="link-light text-decoration-none"
+                ><i class="bi bi-linkedin"></i>LinkedIn</a
+              >
+              <span class="mx-2 opacity-50">|</span>
+              <a
+                href="https://github.com/esztike"
+                target="_blank"
+                class="link-light text-decoration-none"
+              >
+                <i class="bi bi-github"></i>GitHub
+              </a>
+
+              <span class="mx-2 opacity-50">|</span>
+              <a
+                href="https://www.esztihollenback.com/"
+                target="_blank"
+                class="link-light text-decoration-none"
+              >
+                <i class="bi bi-person-badge"></i>UX Design portfolio</a
+              >
+            </div>
+            <p class="small mb-0 opacity-75">&copy; 2026 Eszti Hollenback</p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>

@@ -1,10 +1,20 @@
 /* design system variables */
 :root {
   --font-main: "Avenir Next", sans-serif;
-  --font-logo: "Roboto Mono", monospace; /* Our reliable placeholder */
+  --font-navbar-brand: "Roboto Mono", monospace; /* Our reliable placeholder */
   --bg-color: #f8f8f9;
   --text-primary: #1a1a1a;
   --accent: #0070e3;
+  --brand-dark: #2a2424;
+  --brand-light: #f8f8f9;
+  --dev-color: #04adbf;
+  --design-color: #f2a7c3;
+  --crossover-color: #483c73;
+}
+
+/* Ensure the navbar stays on top of hero content */
+header.sticky-top {
+  z-index: 1030;
 }
 
 /* basic reset */
@@ -22,10 +32,10 @@ body {
 }
 
 /* Nuanced Logo Link */
-.logo {
+.navbar-brand {
   text-decoration: none;
-  color: var(--text-primary);
-  font-family: var(--font-logo);
+  color: var(--bg-color) !important;
+  font-family: var(--font-navbar-brand);
   font-weight: bold;
   font-size: 1.2rem;
   letter-spacing: 1px;
@@ -33,22 +43,84 @@ body {
 
 /* The <&> Bracket Style */
 .accent-bracket {
-  color: var(--accent);
-  font-family: var(--font-logo);
+  color: var(--brand-light);
+  font-family: var(--font-navbar-brand);
   /* highlight */
-  background-color: #f0f0f0; /* Example: light grey */
-  padding: 2px 4px;
-  border-radius: 3px;
+  background-color: var(--brand-dark);
+  padding: 0 0.5rem;
+  border-radius: 16px;
+  margin-right: 0.5rem;
 }
 
 /* 4. Hero Content */
 #hero {
   margin-top: 10vh;
-  max-width: 800px;
+  max-width: 100%;
+}
+@media (min-width: 992px) {
+  #hero {
+    margin-top: 20vh;
+  }
 }
 
-.pitch {
+.hero-pitch {
   font-size: 1.2rem;
   color: #555;
   margin: 1.5rem 0;
+}
+
+.primary-links i {
+  padding-right: 4px; /* The exact gap you want */
+}
+
+#cta i {
+  padding-left: 4px; /* Creates that 4px space between text and arrow */
+}
+
+.hero-cta-link {
+  font-weight: 700;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.hero-cta-link:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: var(--brand-dark);
+  color: var(--brand-light);
+}
+
+.footer-badge .navbar-brand {
+  font-size: 1rem; /* smaller than navbar */
+  color: var(--brand-light) !important;
+  opacity: 0.9;
+}
+
+.section-title {
+  font-size: 1.75rem; /* between h3 and display-6 */
+  font-weight: 700; /* bold, like hero */
+  margin-top: 1rem;
+  margin-bottom: 0;
+  color: var(--brand-dark);
+  text-transform: lowercase; /* matches your aesthetic */
+}
+
+.badge-design {
+  background-color: var(--design-color);
+  color: var(--text-primary);
+}
+.badge-dev {
+  background-color: var(--dev-color);
+  color: var(--text-primary);
+}
+.badge-x {
+  background-color: var(--crossover-color);
+}
+
+.table-borderless,
+.table-borderless td,
+.table-borderless th {
+  background-color: var(--bg-color) !important;
 }
