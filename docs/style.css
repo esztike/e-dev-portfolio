@@ -45,14 +45,13 @@ body {
 .accent-bracket {
   color: var(--brand-light);
   font-family: var(--font-navbar-brand);
-  /* highlight */
   background-color: var(--brand-dark);
   padding: 0 0.5rem;
   border-radius: 16px;
   margin-right: 0.5rem;
 }
 
-/* 4. Hero Content */
+/* Hero Content */
 #hero {
   margin-top: 10vh;
   max-width: 100%;
@@ -70,11 +69,11 @@ body {
 }
 
 .primary-links i {
-  padding-right: 4px; /* The exact gap you want */
+  padding-right: 4px;
 }
 
 #cta i {
-  padding-left: 4px; /* Creates that 4px space between text and arrow */
+  padding-left: 4px;
 }
 
 .hero-cta-link {
@@ -93,18 +92,18 @@ footer {
 }
 
 .footer-badge .navbar-brand {
-  font-size: 1rem; /* smaller than navbar */
+  font-size: 1rem;
   color: var(--brand-light) !important;
   opacity: 0.9;
 }
 
 .section-title {
-  font-size: 1.75rem; /* between h3 and display-6 */
-  font-weight: 700; /* bold, like hero */
+  font-size: 1.75rem;
+  font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 0;
   color: var(--brand-dark);
-  text-transform: lowercase; /* matches your aesthetic */
+  text-transform: lowercase;
 }
 
 .badge-design {
@@ -123,4 +122,11 @@ footer {
 .table-borderless td,
 .table-borderless th {
   background-color: var(--bg-color) !important;
+}
+
+/* This existed before but didn’t override anything */
+.brand-logo {
+  font-family: var(--font-navbar-brand);
+  font-size: 1.6rem;
+  line-height: 1;
 }
