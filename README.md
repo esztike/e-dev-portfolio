@@ -1,19 +1,14 @@
 # `<e>` // e-dev-portfolio
 
-This repository is the central hub for my professional developer portfolio, designed to showcase the intersection of UX/DX Design and Full-stack Development.
+This repository contains my MIT xPRO portfolio project.  
+The site is a simple, static HTML/CSS portfolio built for coursework, documenting my early web development practice.
 
-## Repository Architecture
-To maintain a clean system design, I have organized this repository with a modular structure:
+## Repository Structure
+The project is deployed using GitHub Pages, with all site files located in the `/docs` directory.
 
-* **Root Directory**: Contains the portfolio's primary pages (Home, About, Contact).
-* **`/assets`**: Global media, branding, and the `<e>` favicon.
-* **`/docs`**: Professional documentation and my Resume.
-* **`/projects`**: Standalone project directories, each with its own logic and technical README.
+## Tech Stack
+- **HTML5** — semantic structure  
+- **CSS3** — custom styling and layout  
+- **Git/GitHub** — version control and deployment via GitHub Pages  
 
-## Technical Foundation
-* **HTML5**: Semantic structure for accessibility.
-* **CSS3**: Custom variables and Flexbox/Grid systems.
-* **Git/GitHub**: Version control and deployment via GitHub Pages.
-
----
-*For a deep dive into the code logic of specific projects, please explore the `/projects` directory.*
+This project is a learning artifact and will evolve as I progress through the program.
